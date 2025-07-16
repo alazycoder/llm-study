@@ -1,0 +1,14 @@
+[project]
+name = "study"
+version = "0.1.0"
+description = "Notes while learning llm inference"
+authors = [{name = "laji123", email = "1801213783@pku.edu.cn"}]
+
+[project.optional-dependencies]
+test = [
+    "pytest"
+]
+
+[tool.pytest.ini_options]
+pythonpath = "src"
+testpaths = ["tests"]
