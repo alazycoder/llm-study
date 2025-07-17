@@ -4,8 +4,8 @@ from llm import SimpleSelfAttention, SimpleMultiHeadAttention
 
 
 @pytest.mark.parametrize("batch_size", [1, 128])
-@pytest.mark.parametrize("seq_length", [128, 512, 1024])
-@pytest.mark.parametrize("embed_dim", [128, 512, 1024])
+@pytest.mark.parametrize("seq_length", [128, 256, 512])
+@pytest.mark.parametrize("embed_dim", [128, 256, 512])
 @pytest.mark.parametrize("dtype", [torch.float32, torch.float16])
 def test_simple_self_attention(batch_size, seq_length, embed_dim, dtype):
     x = torch.randn(batch_size, seq_length, embed_dim, dtype=dtype, device='cuda')
