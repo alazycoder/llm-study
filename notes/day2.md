@@ -8,5 +8,5 @@ RoPE 旋转位置编码能够将相对位置信息集成到 self-attention 中�
 
 ## Code
 
-[src/llm/positional_encoding.py](../src/llm/positional_encoding.py)
-[tests/test_positional_encoding.py](../tests/test_positional_encoding.py)
+[src/llm/positional_embedding.py](../src/llm/positional_embedding.py)  
+[tests/test_positional_embedding.py](../tests/test_positional_embedding.py)
